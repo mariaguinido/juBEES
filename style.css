@@ -8,8 +8,8 @@
 }
 
 body {
-  background: #FFF7E6;
-  color: #333;
+  background: #111;
+  color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@ header h1 {
 
 header p {
   font-size: 1.1em;
-  color: #555;
+  color: #ccc;
 }
 
 .dashboard {
@@ -38,29 +38,26 @@ header p {
   justify-content: space-between;
   align-items: stretch;
   gap: 15px;
-  flex-wrap: nonwrap;
+  flex-wrap: nowrap;
   overflow-x: auto;
   padding: 10px;
 }
 
 .card {
-  min-width: 180px;     /* 🔥 each card has fixed minimum width */
-  flex: 0 0 auto;       /* 🔥 prevents cards from shrinking */
-  background: #fffceb;
+  min-width: 180px;
+  flex: 0 0 auto;
+  background: #222;
   border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
   cursor: pointer;
   text-align: center;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  transition: transform 0.2s, background 0.2s;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  background: #333;
 }
 
 .bee {
@@ -76,12 +73,12 @@ header p {
 .card h2 {
   margin-bottom: 10px;
   font-size: 1.5em;
-  color: #4B3832;
+  color: #F6A623;
 }
 
 .card p {
   font-size: 1.2em;
-  color: #4B3832;
+  color: #eee;
 }
 
 .details {
@@ -89,28 +86,29 @@ header p {
   max-width: 900px;
   margin-top: 20px;
   text-align: center;
-  z-index: 0;
   position: relative;
 }
 
 #videoLogs {
   max-height: 150px;
   overflow-y: auto;
-  background: #fff3d6;
+  background: #333;
   padding: 10px;
   border-radius: 10px;
   text-align: left;
   font-size: 0.95em;
+  color: #eee;
 }
 
 button {
   background: #F6A623;
-  color: #fff;
+  color: #111;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1em;
+  transition: background 0.2s;
 }
 
 button:hover {
@@ -120,5 +118,5 @@ button:hover {
 footer {
   margin-top: 40px;
   font-size: 0.9em;
-  color: #999;
+  color: #aaa;
 }
