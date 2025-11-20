@@ -1,1 +1,1 @@
-# juBEES.github.io
+# juBEES
